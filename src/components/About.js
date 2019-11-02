@@ -28,10 +28,10 @@ export default function About() {
         as a common thread a permanent interest in creating trough technology.{" "}
         <br />
         <br />
-        * Current playground: AI and AR.
+        * Current playground: AI and AR
         <br />
-        * Favorite stack: JAM Stack.
-        <br />* Based in Lisbon.
+        * Favorite stack: JAM Stack
+        <br />* Based in Lisbon
       </Text>
     </Container>
   )
