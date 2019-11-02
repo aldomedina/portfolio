@@ -1,0 +1,113 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "about"
+    label: "about"
+    folder: "content/about"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "About", name: "about", widget: "markdown" }
+  - name: "project"
+    label: "project"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Year", name: "year", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Rol", name: "description", widget: "string" }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "object"
+        fields:
+          - label: "Image-1"
+            name: "image-1"
+            widget: "object"
+            required: false
+            fields:
+              - {
+                  label: "info",
+                  name: "info",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+          - label: "Image-2"
+            name: "image-2"
+            widget: "object"
+            required: false
+            fields:
+              - {
+                  label: "info",
+                  name: "info",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+          - label: "Image-3"
+            name: "image-3"
+            widget: "object"
+            required: false
+            fields:
+              - {
+                  label: "info",
+                  name: "info",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+          - label: "Image-4"
+            name: "image-4"
+            widget: "object"
+            required: false
+            fields:
+              - {
+                  label: "info",
+                  name: "info",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+  - name: "other-project"
+    label: "other-project"
+    folder: "content/other-projects"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "info", name: "info", widget: "string" }
+      - { label: "image", name: "image", widget: "image" }
