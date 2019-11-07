@@ -22,11 +22,11 @@ export default function About() {
       <Text>
         contact: aldo.medina.z@gmail.com <br />
         <br />
-        I'm a designer that likes to create (with) code. I also have a dark past
-        in economics and a more memorable one in the world of constructionist
-        pedagogy and experimental public policies. All of those experiences have
-        as a common thread a permanent interest in creating trough technology.{" "}
-        <br />
+        I'm a front-end designer that likes to create (with) code. I also have a
+        dark past in economics and a more memorable one in the world of
+        constructionist pedagogy and experimental public policies. All of those
+        experiences have as a common thread a permanent interest in creating
+        trough technology. <br />
         <br />
         * Current playground: AI and AR
         <br />
