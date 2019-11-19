@@ -96,7 +96,6 @@ export default function Face() {
   }
 
   const startAnimationLoop = () => {
-    console.log(camera.position.x, camera.position.y)
     if (camera.position.x < 10 && camera.position.x > -10) {
       camera.position.x -= (mouseX + camera.position.x) * 0.0003
     } else if (camera.position.x > 10) {
